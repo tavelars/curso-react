@@ -12,8 +12,7 @@ ReactDOM.render(
         <strong>Olá React,</strong> {nome}
         <br />
         <Primeiro></Primeiro>
-        <ComParametro titulo="Segundo componente desenvolvido" subtitulo="React componentizando"></ComParametro>
-        <ComParametro titulo="Customizando mensagens via parametro" subtitulo="Tudo parametrizado"></ComParametro>
+        <ComParametro titulo="Situação do Aluno:" aluno="Thiago J A Silva" nota={10.0}></ComParametro>
     </div>,
     document.getElementById("root")
 )
