@@ -10,15 +10,25 @@ import Familia from './components/basicos/Familia';
 import MembroFamiliaProps from './components/basicos/FamiliaMembroProps';
 import FamiliaProps from './components/basicos/FamiliaProps';
 import FamiliaMembroProps from './components/basicos/FamiliaMembroProps';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 export default function App(props) {
     return (
-        
+
         <div className="App">
 
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+
+                <Card titulo="#8 ETabela Produtos" color="#01070a">
+                    <TabelaProdutos></TabelaProdutos>
+                </Card>
+
+                <Card titulo="#7 Estrutura Repetição" color="#24070a">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
 
                 <Card titulo="#6 Componente com filhos Props" color="#24076e">
                     <FamiliaProps sobrenome="Silva">
@@ -26,11 +36,11 @@ export default function App(props) {
                         <FamiliaMembroProps nome="Marina" sobrenome="Ladeira"></FamiliaMembroProps>
                         <FamiliaMembroProps nome="Isis Ladeira"></FamiliaMembroProps>
                     </FamiliaProps>
-                 </Card>   
+                </Card>
 
                 <Card titulo="#5 Componente com filhos" color="#946363">
                     <Familia sobrenome="Silva"></Familia>
-                 </Card>   
+                </Card>
 
                 <Card titulo="#4 Desafio Aleatório" color="#efb914">
                     <Aleatorio min={1} max={60}></Aleatorio>
