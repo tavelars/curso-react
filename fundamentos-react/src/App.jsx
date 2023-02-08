@@ -12,6 +12,8 @@ import FamiliaProps from './components/basicos/FamiliaProps';
 import FamiliaMembroProps from './components/basicos/FamiliaMembroProps';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 export default function App(props) {
     return (
@@ -21,6 +23,17 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo="#10 Usuário Info" color="#778899">
+                    <UsuarioInfo usuario={{nome: 'Thiago'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{nome: 'Marina'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{nome: 'Isis'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{email: 'a@gmail.com'}}></UsuarioInfo>
+                </Card>
+
+                <Card titulo="#9 Renderizacao Condicional" color="#00FFFF">
+                    <ParOuImpar numero="20"></ParOuImpar>
+                </Card>
+
 
                 <Card titulo="#8 ETabela Produtos" color="#01070a">
                     <TabelaProdutos></TabelaProdutos>
