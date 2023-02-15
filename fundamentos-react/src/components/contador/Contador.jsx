@@ -45,7 +45,7 @@ class Contador extends Component {
 
     render() {
         return (
-            <div styleClass="Contador">
+            <div className='Contador'>
                 <h2>Contador</h2>
                 
                 <div>
@@ -58,8 +58,10 @@ class Contador extends Component {
                 </div>
 
                 <h3>Valor Inicial: {this.state.numero}</h3>
+                
                 <button onClick={this.inc}> + </button>
                 <button onClick={this.dec}> - </button>
+
             </div >
         )
     }
