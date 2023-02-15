@@ -19,6 +19,7 @@ import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
 import ContadorComponentizado from './components/contador/ContadorComponentizado';
+import Mega from './components/mega/Mega';
 
 export default function App(props) {
     return (
@@ -28,6 +29,10 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+
+                 <Card titulo="#14 Mega" color="#B9006E">
+                    <Mega></Mega>
+                </Card>
 
                 <Card titulo="#13 Contador Componentizado" color="#8B4513">
                     <ContadorComponentizado numeroInicial={200} />
